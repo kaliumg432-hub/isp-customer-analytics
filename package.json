@@ -4,7 +4,7 @@
   "description": "M-Pesa customer analytics app for a Kenyan ISP",
   "scripts": {
     "build": "node build.mjs",
-    "sample": "python3 tools/make_sample_data.py"
+    "sample": "python3 make_sample_data.py"
   },
   "dependencies": {
     "esbuild": "^0.28.2",

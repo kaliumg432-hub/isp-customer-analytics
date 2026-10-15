@@ -4,7 +4,7 @@ import { build } from 'esbuild';
 import { writeFileSync } from 'node:fs';
 
 const result = await build({
-  entryPoints: ['src/main.jsx'],
+  entryPoints: ['main.jsx'],
   bundle: true,
   minify: true,
   write: false,

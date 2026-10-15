@@ -3,13 +3,13 @@
 Every customer, receipt and amount here is invented. Account IDs use a
 DEMO#### format so they can never be mistaken for real phone numbers.
 
-Usage:  python tools/make_sample_data.py   (writes sample-data/*.csv)
+Usage:  python make_sample_data.py   (writes the demo_utility_statement_*.csv files next to it)
 """
 import csv, random, string, calendar, os
 from datetime import datetime
 
 random.seed(2026)
-OUT = os.path.join(os.path.dirname(__file__), "..", "sample-data")
+OUT = os.path.dirname(os.path.abspath(__file__))
 os.makedirs(OUT, exist_ok=True)
 
 MONTHS = [(2026, 7, 31), (2026, 8, 31), (2026, 9, 30), (2026, 10, 14)]  # Oct is month-to-date

@@ -59,13 +59,13 @@ I chose this text-based protocol over native tool calling because tool calling p
 
 ## Repository contents
 
-| Path | What it is |
+| File | What it is |
 |---|---|
 | `index.html` | The live demo, built into one self-contained file |
-| `src/happynet-analytics.jsx` | The app, as built for HappyNet |
-| `src/main.jsx` | Demo wrapper: browser storage, demo data loader, API key handling |
-| `sample-data/` | Four months of synthetic M-Pesa statements in the real export format |
-| `tools/make_sample_data.py` | The script that generates the synthetic data |
+| `happynet-analytics.jsx` | The app, as built for HappyNet |
+| `main.jsx` | Demo wrapper: browser storage, demo data loader, API key handling |
+| `demo_utility_statement_2026-07.csv` … `-10.csv` | Four months of synthetic M-Pesa statements in the real export format |
+| `make_sample_data.py` | The script that generates the synthetic data |
 | `build.mjs` | Builds `index.html` with esbuild |
 
 ## Running it yourself
@@ -75,7 +75,7 @@ npm install
 npm run build      # writes index.html
 ```
 
-Then open `index.html` in a browser. To regenerate the sample data, run `python3 tools/make_sample_data.py`.
+Then open `index.html` in a browser. To regenerate the sample data, run `python3 make_sample_data.py`.
 
 ## Built with
 

@@ -10,10 +10,10 @@
 import React, { useEffect, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import App, { parseCSVFile, mergeBuckets, saveMonth, saveIndex } from './happynet-analytics.jsx';
-import jul from '../sample-data/demo_utility_statement_2026-07.csv';
-import aug from '../sample-data/demo_utility_statement_2026-08.csv';
-import sep from '../sample-data/demo_utility_statement_2026-09.csv';
-import oct from '../sample-data/demo_utility_statement_2026-10.csv';
+import jul from './demo_utility_statement_2026-07.csv';
+import aug from './demo_utility_statement_2026-08.csv';
+import sep from './demo_utility_statement_2026-09.csv';
+import oct from './demo_utility_statement_2026-10.csv';
 
 // ---- 1. storage --------------------------------------------------------------
 const NS = 'isp-analytics-demo:';
